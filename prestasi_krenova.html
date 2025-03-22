@@ -192,7 +192,7 @@
             Rabu, 8 Mei 2024
         </p>
 
-        <div class="flex flex-col gap-6 mt-10 w-full font-monserrat text-base lg:text-lg 2xl:text-xl text-c4 text-justify max-w-[665px]">
+        <div class="flex flex-col gap-6 mt-10 w-full font-monserrat text-base lg:text-lg 2xl:text-xl text-c4 text-justify lg:max-w-[665px]">
             <p>
                 Pada Rabu, 8 Mei 2024, Politeknik Negeri Cilacap kembali mencatatkan prestasi gemilang dengan memborong Juara 1 dan 2 di Lomba Kreativitas & Inovasi Masyarakat (Krenova) 2024. Kemenangan ini menjadi bukti nyata keunggulan dan kemampuan luar biasa dari tim Protic, yang telah menunjukkan kreativitas dan inovasi mereka pada kategori mahasiswa perguruan tinggi.
             </p>
@@ -203,8 +203,7 @@
         </div>
       </div>
 
-      <!-- Gambar -->
-
+      <!-- display > 1024px -->
       <div class="hidden lg:flex items-center justify-center gap-6 w-auto 1300:mt-20">
 
         <div class="flex flex-col relative gap-5 w-80">
@@ -224,6 +223,20 @@
           <img src="img/krenova2.jpeg" alt="Juara Krenova 2024" class="rounded-xl object-cover w-full h-full">
         </div>
       </div>
+
+
+      <!-- display < 1024px -->
+      <div class="flex lg:hidden gap-6 w-auto lg:mt-10">
+        <!-- image 1 -->
+        <div class="relative max-w-[420px] max-h-[22rem] aspect-[40/33]">
+            <img src="img/krenova-protic.jpg" alt="Juara 3 KMIPN - VI" class="rounded-xl object-cover w-full h-full">
+        </div>
+
+        <!-- image 2 -->
+        <div class="hidden md:block relative md:max-w-64 md:h-[22rem] lg:h-56">
+            <img src="img/krenova1.jpeg" alt="Juara 3 KMIPN - VI" class="rounded-xl object-cover w-full h-full">
+        </div>
+    </div>
 
     </div>
 
