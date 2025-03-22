@@ -1,0 +1,99 @@
+.clip-path-trapezoid {
+    clip-path: polygon(0 0, 0 100%, 40% 100%, 100% 0);
+    /* background-image: linear-gradient(to right, #275032, #275032, #275032f1, #27503269, transparent, transparent, transparent, transparent); */
+    background-image: linear-gradient(150deg, #275032, #275032, #275032, transparent, transparent, transparent);
+    /* background-image: linear-gradient(150deg, #38392B80, #38392B80, #38392B80, transparent, transparent, transparent); */
+}
+
+.line {
+    width: 3.5rem;
+    height: 1px;
+    /* background-color: #13111e33; */
+    margin-left: 1rem;
+}
+
+.breadcrumb {
+    align-items: center;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.breadcrumb li:last-child {
+    color: #f9a825; /* Warna kuning untuk elemen terakhir */
+}
+
+
+.rotate-arrow {
+    transform: rotate(180deg);
+}
+
+#overlay {
+    position: fixed;
+    top: 80px; /* Start below the navbar */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 5; /* Below the menu but above content */
+    display: none; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    nav ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
+
+
+
+
+
+/* Scroll Bar in Aside */
+aside::-webkit-scrollbar {
+    width: 8px; /* Lebar scrollbar */
+}
+
+aside::-webkit-scrollbar-thumb {
+    background: transparent; /* Warna thumb */
+    border-radius: 10px; /* Biar membulat */
+    opacity: 0; /* Awalnya tidak terlihat */
+    transition: opacity 0.3s ease-in-out;
+}
+
+aside:hover::-webkit-scrollbar-thumb {
+    background: #275032;
+}
+
+/* aside {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    transition: scrollbar-color 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+aside:hover {
+    scrollbar-color: #275032 transparent;
+    border-radius: 10px;
+} */
+  
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #275032;
+    border-radius: 10px;
+}

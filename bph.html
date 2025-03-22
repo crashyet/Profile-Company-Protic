@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new-style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="flex-wrap md:flex-nowrap flex justify-between items-center fixed w-full md:px-0 top-0 text-white bg-c6 h-[80px] 1000:h-[90px] z-50">
+
+      <!-- logo section -->
+      <div class="flex w-full max-w-[50%] md:w-[300px] 1200:w-[380px] 1400:w-[420px] 1700:w-[550px]">
+          <div class="flex items-center bg-c2 w-[200px] md:w-[450px] h-[80px] md:h-[90px] justify-around">
+              <div class="py-3 px-5">
+                  <img src="img/Logo.png" alt="Logo Protic" class="w-[60px] 1000:w-[70px] h-[60px] 1000:h-[70px]">
+              </div>
+          </div>
+          <div class="hidden md:block w-0 h-0 border-t-[90px] border-r-[60px] xl:border-r-[90px] border-t-c2 border-r-transparent"></div>
+      </div>
+
+      <!-- <div class="z-10">
+          <img src="img/Logo.png" alt="Logo Protic" class="w-[50px] md:w-[70px] h-[50px] md:h-[70px]">
+      </div> -->
+
+      <!-- desktop view -->
+      <ul id="navbar-desktop" class="hidden 1000:flex items-center font-monserrat font-semibold text-center text-base md:gap-[30px] xl:gap-[45px] 2xl:gap-[70px] mx-5">
+          <li class="text-center"><a href="index.html" class="block w-full py-4 hover:text-c3">Home</a></li>
+          <li class="text-center"><a href="about.html" class="block w-full py-4 hover:text-c3">About Us</a></li>
+
+          <!-- dropdown divisi -->
+          <li class="text-center ">
+              <div class="w-full md:relative">
+                  <button id="btn-divisi-desktop" class="py-4 w-full flex items-center justify-center mx-auto gap-2 text-c3">
+                      Divisi
+                      <!-- arrow decoration -->
+                      <svg id="arrow-desktop" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                  </button>
+
+                  <!-- list divisi -->
+                  <ul id="menu-divisi-desktop" class="hidden md:absolute bg-white w-36 rounded-md font-medium text-sm text-black right-0 px-[0.875rem] mt-2">
+
+                      <!-- polygon decoration -->
+                      <div class="hidden md:block ml-16 -mt-2">
+                          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.28922 0.655624C6.88846 -0.163773 8.11154 -0.163774 8.71077 0.655623L13.9827 7.86455C14.7075 8.85556 13.9997 10.25 12.772 10.25H2.22804C1.0003 10.25 0.292525 8.85556 1.01726 7.86455L6.28922 0.655624Z" fill="white"/>
+                          </svg>
+                      </div>
+
+                      <li class="text-start"><a href="bph.html" class="block w-full py-4 hover:text-c3">BPH</a></li><hr>
+                      <li class="text-start"><a href="technical.html" class="block w-full py-4 hover:text-c3">Technical</a></li><hr>
+                      <li class="text-start"><a href="non_technical.html" class="block w-full py-4 hover:text-c3">Non-Technical</a></li>
+                  </ul>
+              </div>
+          </li>
+
+          <li class="text-center"><a href="prestasi_kmipn.html" class="block w-full py-4 hover:text-c3">Prestasi</a></li>
+          <li class="text-center"><a href="sj_web_basic.html" class="block w-full py-4 hover:text-c3">Program</a></li>
+          <li class="text-center"><a href="contact.html" class="block w-full py-4 hover:text-c3">Contact Us</a></li>
+      </ul>
+
+      <div id="search-box-desktop" class="hidden 1000:flex items-center border border-c3 rounded px-3 lg:px-4 w-full max-w-[110px] 1100:max-w-[180px] xl:max-w-[200px] 2xl:max-w-[235px] min-w-[100px] h-[40px] lg:mr-14 2xl:mr-20 1700:mr-40">
+
+          <button class="text-white hover:text-c3 mr-3 lg:mr-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12.9 14.32a8 8 0 111.42-1.42l4.9 4.9a1 1 0 01-1.42 1.42l-4.9-4.9zM8 14a6 6 0 100-12 6 6 0 000 12z" clip-rule="evenodd" />
+              </svg>
+          </button>
+          <input type="text" placeholder="cari" class="bg-transparent text-white placeholder-[#FFFFFFBF] focus:outline-none font-monserrat font-semibold text-base max-w-[60px] 1100:max-w-[130px] xl:max-w-[150px] 2xl:max-w-[185px]"/>
+      </div>
+
+
+      <!-- hamburger button -->
+      <div id="hamburger" class="1000:hidden z-10 mr-10">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+      </div>
+
+      <!-- mobile menu -->
+      <ul id="menu-list" class="absolute 1000:hidden w-3/4 sm:w-1/2 hidden flex-col items-start h-screen right-0 p-5 top-full bg-c6 font-monserrat font-semibold text-base">
+
+          <!-- search box -->
+          <div id="search-box" class="flex items-center border border-c3 rounded px-4 w-full h-[40px] mb-5">
+              <button class="text-white hover:text-c3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M12.9 14.32a8 8 0 111.42-1.42l4.9 4.9a1 1 0 01-1.42 1.42l-4.9-4.9zM8 14a6 6 0 100-12 6 6 0 000 12z" clip-rule="evenodd" />
+                  </svg>
+              </button>
+              <input type="text" placeholder="cari" class="bg-transparent text-white placeholder-[#FFFFFFBF] focus:outline-none ml-6 font-monserrat font-semibold text-base"/>
+          </div>
+
+          <!-- menu list -->
+          <div class="1000:flex md:gap-7 lg:gap-[4.375rem]">
+              <li class="text-center"><a href="index.html" class="block w-full py-4">Home</a></li>
+              <li class="text-center"><a href="about.html" class="block w-full py-4">About Us</a></li>
+
+              <!-- dropdown divisi -->
+              <li class="text-center ">
+                  <div class="w-full 1000:relative">
+                      <button id="btn-divisi" class="py-4 w-full flex items-center justify-center mx-auto gap-2 text-c3">
+                          Divisi
+                          <!-- arrow decoration -->
+                          <svg id="arrow" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300" viewBox="0 0 20 20" fill="currentColor">
+                              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                          </svg>
+                      </button>
+
+                      <!-- list divisi -->
+                      <ul id="menu-divisi" class="hidden bg-c6">
+
+                          <li class="text-center 1000:text-start"><a href="bph.html" class="block w-full py-4 text-c3">BPH</a></li> <hr class="hidden 1000:block">
+                          <li class="text-center 1000:text-start"><a href="technical.html" class="block w-full py-4">Technical</a></li> <hr class="hidden 1000:block">
+                          <li class="text-center 1000:text-start"><a href="non_technical.html" class="block w-full py-4">Non-Technical</a></li>
+                      </ul>
+                  </div>
+              </li>
+
+              <li class="text-center"><a href="prestasi_kmipn.html" class="block w-full py-4">Prestasi</a></li>
+              <li class="text-center"><a href="sj_web_basic.html" class="block w-full py-4">Program</a></li>
+              <li class="text-center"><a href="contact.html" class="block w-full py-4">Contact Us</a></li>
+          </div>
+      </ul>
+
+
+    </nav> <div id="overlay"></div>
+    
+    <section class="relative h-36 md:h-44 lg:h-52" id="breadcrumb">
+      <div class="relative h-full w-full bg-cover bg-center" style="background-image: url(img/foto1.jpg);">
+          <!-- Green screen overlay -->
+          <div class="absolute inset-0 bg-c6 bg-opacity-70"></div>
+  
+          <!-- Green square overlay - made responsive -->
+          <div class="absolute h-full bg-c6 blur-md w-48 sm:w-56 md:w-64 lg:w-72"></div>
+  
+          <!-- Green trapezoid overlay - made responsive -->
+          <div class="relative h-full blur-md w-1/2 clip-path-trapezoid ml-20"></div>
+          
+          <!-- Breadcrumb - made responsive -->
+          <div class="absolute flex items-center bottom-0 z-20 h-16 md:h-24 lg:h-32 w-full pl-8 md:pl-16 lg:pl-20 2xl:pl-40 1700:pl-52">
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb flex justify-center items-center font-monserrat text-white text-sm md:text-base lg:text-lg gap-5">
+                      <li><a href="index.html" class="">Home</a></li>
+                      <li>
+                        <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.74574 8.99999L1.00824 2.26249C0.779069 2.03332 0.668153 1.76596 0.675486 1.4604C0.682819 1.15485 0.801374 0.887487 1.03115 0.658319C1.26093 0.429153 1.52829 0.314569 1.83324 0.314569C2.13818 0.314569 2.40554 0.429153 2.63532 0.658319L9.69365 7.69374C9.87699 7.87707 10.0145 8.08332 10.1062 8.31249C10.1978 8.54165 10.2437 8.77082 10.2437 8.99999C10.2437 9.22915 10.1978 9.45832 10.1062 9.68749C10.0145 9.91665 9.87699 10.1229 9.69365 10.3062L2.63532 17.3646C2.40615 17.5937 2.13482 17.7047 1.82132 17.6973C1.50782 17.69 1.23679 17.5714 1.00824 17.3417C0.77968 17.1119 0.665096 16.8445 0.664486 16.5396C0.663875 16.2346 0.778458 15.9673 1.00824 15.7375L7.74574 8.99999Z" fill="#C8C6C7"/>
+                        </svg>                            
+                      </li>
+                      <li class="text-c3">Divisi</li>
+                  </ol>
+              </nav>
+          </div>
+      </div>
+    </section>
+
+    <section class="relative" id="content">
+      <div class="bg-white h-full flex flex-col lg:flex-row items-center justify-center py-8 md:py-14 lg:py-24 px-8 gap-8 lg:gap-28">
+        
+        <!-- Image container - responsive sizing and padding -->
+        <div class="relative rounded-xl w-full aspect-[62/49] lg:aspect-auto max-w-[620px] md:h-[490px] px-3 md:px-5 py-2 md:py-4 bg-[#13111E33]">
+          <img src="img/hero-bg.jpg" alt="Foto Anggota" class="rounded-lg w-full h-full object-cover">
+        </div>
+        
+        <!-- Text container - with improved spacing and responsive text -->
+        <div class="mt-6 lg:mt-10 w-full max-w-[650px] text-justify">
+          <h3 class="flex items-center font-monserrat font-semibold text-base md:text-lg text-c3 tracking-widest">BPH</h3>
+          <p class="mt-4 md:mt-6 font-monserrat font-normal text-base md:text-lg text-c4">
+            Divisi BPH berfungsi sebagai pusat pengambilan keputusan dan 
+            penentu arah strategis komunitas, memastikan semua aspek organisasi 
+            berjalan dengan baik dan sesuai dengan tujuan yang telah ditetapkan.
+          </p>
+          
+          <div class="ml-4 md:ml-6 max-w-[495px] mt-6">
+            <!-- Position items -->
+            <div class="mb-6">
+              <h3 class="flex items-center font-monserrat font-semibold text-lg text-black">Ketua</h3>
+              <p class="mt-2 font-monserrat font-normal text-base text-c4">Ketua memimpin dan mengarahkan jalannya organisasi.</p>
+              <hr class="border-t-2 border-black mt-4">
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="flex items-center font-monserrat font-semibold text-lg text-black">Wakil Ketua</h3>
+              <p class="mt-2 font-monserrat font-normal text-base text-c4">Wakil Ketua mendukung Ketua dan mengambil alih peran jika diperlukan.</p>
+              <hr class="border-t-2 border-black mt-4">
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="flex items-center font-monserrat font-semibold text-lg text-black">Sekretaris</h3>
+              <p class="mt-2 font-monserrat font-normal text-base text-c4">Sekretaris mengelola administrasi dan dokumentasi, termasuk pencatatan rapat dan pengarsipan dokumen.</p>
+              <hr class="border-t-2 border-black mt-4">
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="flex items-center font-monserrat font-semibold text-lg text-black">Bendahara</h3>
+              <p class="mt-2 font-monserrat font-normal text-base text-c4">Bendahara bertanggung jawab atas pengelolaan keuangan, termasuk penyusunan anggaran, pencatatan transaksi, dan pelaporan keuangan secara transparan.</p>
+              <hr class="border-t-2 border-black mt-4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative" id="contact">
+      <!-- Container utama dengan padding yang responsif -->
+      <!-- <div class="bg-c2 flex flex-col 2xl:flex-row w-full py-20 lg:py-24 px-8 lg:px-20"> -->
+      <div class="bg-c2 flex flex-col 2xl:flex-row items-center justify-center w-full py-20 lg:py-24 px-8 sm:px-12 lg:px-20">
+        
+        <!-- Logo dan deskripsi -->
+        <div class="flex flex-col items-center text-center max-w-[490px] mb-8 lg:mb-12 ml-0 2xl:ml-10">
+          <img src="img/Logo.png" alt="Logo Protic" class="w-auto max-w-20 h-auto">
+          <p class="mt-4 sm:mt-6 font-monserrat text-base md:text-xl px-4">Unit Kegiatan Mahasiswa Programming Technology Informatics Club yang mewadahi minat dan bakat mahasiswa Politeknik Negeri Cilacap</p>
+        </div>
+    
+        <!-- Divider -->
+        <div class="block 2xl:hidden w-full h-[1px] bg-[#13111E80] mb-8"></div>
+    
+        <!-- Grid container untuk informasi kontak dan links -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:flex gap-8 max-w-5xl w-full 2xl:ml-24 justify-items-start lg:justify-items-center">
+          
+          <!-- Contact Us Section -->
+          <div class="flex flex-col space-y-4 2xl:w-[320px]">
+            <h3 class="font-monserrat font-bold text-lg sm:text-xl text-[#13111E80] mb-2">Contact Us</h3>
+            
+            <div class="flex items-center space-x-3">
+              <svg width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 5.25342C8.18415 5.25342 7.38663 5.49534 6.70827 5.94861C6.02992 6.40187 5.50121 7.0461 5.189 7.79985C4.87679 8.55359 4.7951 9.38299 4.95426 10.1832C5.11343 10.9833 5.50629 11.7183 6.08318 12.2952C6.66008 12.8721 7.39508 13.265 8.19525 13.4242C8.99542 13.5833 9.82482 13.5016 10.5786 13.1894C11.3323 12.8772 11.9766 12.3485 12.4298 11.6701C12.8831 10.9918 13.125 10.1943 13.125 9.37842C13.1238 8.28478 12.6888 7.23629 11.9154 6.46297C11.1421 5.68965 10.0936 5.25466 9 5.25342ZM9 11.2534C8.62916 11.2534 8.26665 11.1435 7.95831 10.9374C7.64996 10.7314 7.40964 10.4386 7.26773 10.0959C7.12581 9.75334 7.08868 9.37634 7.16103 9.01262C7.23337 8.64891 7.41195 8.31482 7.67417 8.05259C7.9364 7.79037 8.27049 7.61179 8.6342 7.53944C8.99792 7.4671 9.37492 7.50423 9.71753 7.64614C10.0601 7.78806 10.353 8.02838 10.559 8.33672C10.765 8.64507 10.875 9.00758 10.875 9.37842C10.8745 9.87553 10.6767 10.3521 10.3252 10.7036C9.97371 11.0552 9.49711 11.2529 9 11.2534ZM9 0.753418C6.7133 0.755999 4.521 1.66553 2.90405 3.28247C1.28711 4.89941 0.377581 7.09172 0.375 9.37842C0.375 16.6307 8.02894 22.072 8.35481 22.3001C8.54392 22.4324 8.76917 22.5034 9 22.5034C9.23083 22.5034 9.45608 22.4324 9.64519 22.3001C11.0943 21.2329 12.4204 20.008 13.5989 18.6479C16.2328 15.6189 17.625 12.4136 17.625 9.37842C17.6224 7.09172 16.7129 4.89941 15.0959 3.28247C13.479 1.66553 11.2867 0.755999 9 0.753418ZM11.9346 17.1329C11.0407 18.1595 10.0588 19.1059 9 19.9615C7.94123 19.1059 6.9593 18.1595 6.06544 17.1329C4.49587 15.319 2.625 12.5012 2.625 9.37842C2.625 7.68766 3.29665 6.06616 4.49219 4.87061C5.68774 3.67507 7.30925 3.00342 9 3.00342C10.6908 3.00342 12.3123 3.67507 13.5078 4.87061C14.7034 6.06616 15.375 7.68766 15.375 9.37842C15.375 12.5012 13.5041 15.319 11.9346 17.1329Z" fill="#13111E" fill-opacity="0.5"/>
+              </svg>
+              <a href="https://maps.app.goo.gl/S7h5mfVoFyMR33Qn6" target="_blank" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors">ABC, ABC City</a>
+            </div>
+    
+            <div class="flex items-center space-x-3">
+              <svg width="24" height="24" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.5 20.0036C6.84934 20.0036 0.625 13.7793 0.625 6.12862C0.626473 4.76024 1.12605 3.43919 2.03041 2.41225C2.93478 1.38531 4.18206 0.722715 5.53928 0.548248C5.94235 0.499553 6.35035 0.582582 6.70232 0.784931C7.0543 0.987279 7.33136 1.29808 7.49209 1.6709L9.37553 6.06572C9.4977 6.34986 9.54753 6.65986 9.52055 6.96798C9.49357 7.2761 9.39063 7.57272 9.22094 7.83131L7.78037 10.0326C8.42191 11.2398 9.41225 12.2258 10.6223 12.862L12.7877 11.4181C13.047 11.2445 13.3456 11.1387 13.6563 11.1101C13.967 11.0815 14.2799 11.1312 14.5665 11.2546L18.9576 13.1365C19.3306 13.2971 19.6415 13.5741 19.8439 13.9262C20.0463 14.2782 20.1292 14.6862 20.0804 15.0893C19.9059 16.4466 19.2433 17.6938 18.2164 18.5982C17.1894 19.5026 15.8684 20.0022 14.5 20.0036ZM5.54012 2.82815C4.78584 2.99136 4.11012 3.40777 3.62528 4.0082C3.14044 4.60862 2.87568 5.35689 2.875 6.12862C2.87847 9.2107 4.10436 12.1655 6.28372 14.3449C8.46308 16.5243 11.4179 17.7502 14.5 17.7536C15.2717 17.7529 16.02 17.4881 16.6204 17.0033C17.2208 16.5185 17.6372 15.8428 17.8005 15.0885L13.867 13.4028L11.689 14.8551C11.419 15.0353 11.1068 15.1423 10.783 15.1656C10.4592 15.1888 10.1349 15.1276 9.84184 14.9878C8.02165 14.1058 6.54906 12.6399 5.65872 10.8237C5.5183 10.5325 5.45556 10.2098 5.47659 9.88717C5.49761 9.56451 5.60169 9.25277 5.77872 8.98219L7.22837 6.76725L5.54012 2.82815Z" fill="#13111E" fill-opacity="0.5"/>
+              </svg>
+              <a href="tel:+997 9876789076" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors">+997 9876789076</a>
+            </div>
+    
+            <div class="flex items-center space-x-3">
+              <svg width="24" height="24" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.1236 1.85095C21.1231 1.83057 21.1221 1.81026 21.1205 1.79001C21.1192 1.77264 21.1175 1.75539 21.1153 1.73826C21.1107 1.70136 21.1042 1.66469 21.0961 1.62839C21.0879 1.59261 21.078 1.55722 21.0665 1.52236C21.0608 1.50501 21.0543 1.48795 21.0477 1.47079C21.0347 1.43658 21.0197 1.40312 21.0029 1.37057C20.9946 1.35426 20.9861 1.33804 20.9771 1.3222C20.968 1.30644 20.9586 1.2909 20.9487 1.27561C20.9185 1.2277 20.8844 1.18225 20.847 1.13967C20.8408 1.13254 20.8356 1.12514 20.8292 1.1182C20.824 1.11239 20.818 1.10742 20.8125 1.1017C20.7988 1.08745 20.7847 1.07357 20.7703 1.06007C20.7571 1.04761 20.7439 1.03532 20.7302 1.02361C20.7166 1.01211 20.7027 1.00096 20.6886 0.990137C20.6734 0.978173 20.6579 0.966606 20.6421 0.955449C20.6283 0.945793 20.6141 0.936887 20.5999 0.927887C20.5834 0.917217 20.5666 0.906995 20.5495 0.897231C20.5345 0.888793 20.519 0.881293 20.5036 0.873512C20.4867 0.865074 20.4699 0.856543 20.4526 0.848949C20.4358 0.841543 20.4186 0.835074 20.4013 0.828418C20.3848 0.822137 20.3683 0.815762 20.3517 0.81023C20.3334 0.80423 20.3148 0.799262 20.2963 0.794199C20.2795 0.789606 20.263 0.785012 20.2461 0.781262C20.2276 0.777302 20.209 0.773801 20.1903 0.770762C20.1724 0.767536 20.1543 0.764754 20.1362 0.762418C20.1186 0.760405 20.1009 0.758811 20.0833 0.757637C20.0632 0.756067 20.0432 0.755036 20.0232 0.754543C20.0154 0.754449 20.0078 0.753418 20 0.753418H2C1.99213 0.753418 1.98462 0.754356 1.97684 0.754543C1.95669 0.755012 1.93663 0.756137 1.91656 0.757637C1.89897 0.758824 1.8814 0.760418 1.86388 0.762418C1.84559 0.764668 1.8275 0.767668 1.80931 0.770856C1.79084 0.773949 1.77228 0.777137 1.754 0.781168C1.73703 0.785012 1.72016 0.789606 1.70319 0.794293C1.68491 0.799356 1.66663 0.80423 1.64872 0.810137C1.63156 0.815762 1.61478 0.822324 1.59791 0.828699C1.58103 0.835262 1.56416 0.841543 1.54766 0.848762C1.53012 0.856543 1.51297 0.865168 1.49572 0.873793C1.48063 0.881387 1.46544 0.888793 1.45072 0.897043C1.43347 0.906793 1.41659 0.917387 1.39972 0.928168C1.38566 0.93698 1.37159 0.945793 1.358 0.955355C1.34206 0.966324 1.32669 0.978231 1.31122 0.990231C1.29716 1.00111 1.28328 1.01198 1.26987 1.02351C1.25614 1.03536 1.2427 1.04756 1.22956 1.06007C1.21522 1.07367 1.20106 1.08745 1.18747 1.1017C1.18203 1.10732 1.17603 1.11239 1.17069 1.1182C1.16441 1.12514 1.15916 1.13254 1.15297 1.13957C1.12822 1.16794 1.10488 1.19751 1.08303 1.22817C1.07197 1.24373 1.06147 1.25957 1.05116 1.27561C1.04141 1.29098 1.03194 1.30645 1.02294 1.3222C1.01384 1.33804 1.00541 1.35426 0.997156 1.37057C0.988719 1.38707 0.980656 1.40357 0.973156 1.42026C0.965789 1.43693 0.958849 1.45377 0.952344 1.47079C0.945688 1.48786 0.939219 1.50501 0.933406 1.52236C0.927687 1.5397 0.922531 1.55723 0.917563 1.57486C0.912594 1.59267 0.907906 1.61048 0.903875 1.62829C0.895747 1.66463 0.889333 1.70132 0.884656 1.73826C0.882531 1.75539 0.880813 1.77261 0.8795 1.78992C0.877875 1.81023 0.876844 1.83054 0.876406 1.85086C0.876219 1.86023 0.875 1.86914 0.875 1.87842V14.6284C0.875571 15.1255 1.0733 15.6021 1.42481 15.9536C1.77631 16.3051 2.25289 16.5028 2.75 16.5034H19.25C19.7471 16.5028 20.2237 16.3051 20.5752 15.9536C20.9267 15.6021 21.1244 15.1255 21.125 14.6284V1.87842C21.125 1.86904 21.1238 1.86014 21.1236 1.85095ZM17.1079 3.00342L11 8.60226L4.89219 3.00342H17.1079ZM3.125 14.2534V4.43573L10.2399 10.9577C10.4473 11.1479 10.7186 11.2534 11 11.2534C11.2814 11.2534 11.5527 11.1479 11.7601 10.9577L18.875 4.43573V14.2534H3.125Z" fill="#13111E" fill-opacity="0.5"/>
+              </svg>
+              <a href="mailto:ukm.pemrograman@pnc.ac.id" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors break-all">ukm.pemrograman@pnc.ac.id</a>
+            </div>
+          </div>
+          <div class="block sm:hidden w-full h-[1px] bg-[#13111E80]"></div>
+    
+          <!-- Quick Links Section -->
+          <div class="flex flex-col space-y-3 sm:ml-12 lg:ml-0 2xl:ml-12 2xl:mr-36 2xl:w-[125px]">
+            <h3 class="font-monserrat font-bold text-lg sm:text-xl text-[#13111E80] mb-2">Quick Links</h3>
+            <a href="about.html" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors">About Us</a>
+            <a href="bph.html" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors">Divisi</a>
+            <a href="prestasi_kmipn.html" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors">Prestasi</a>
+            <a href="sj_web_basic.html" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors">Program</a>
+            <a href="contact.html" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors">Contact Us</a>
+          </div>
+          <div class="block sm:hidden w-full h-[1px] bg-[#13111E80]"></div>
+    
+          <!-- Social Media Section -->
+          <div class="flex flex-col space-y-3 2xl:w-[135px]">
+            <h3 class="font-monserrat font-bold text-lg sm:text-xl text-[#13111E80] mb-2">Social Media</h3>
+            <a href="https://www.instagram.com/protic_pnc/" target="_blank" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors">Instagram</a>
+            <a href="https://www.linkedin.com/company/proticpnc/" target="_blank" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors">LinkedIn</a>
+            <a href="#" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors">TikTok</a>
+            <a href="https://github.com/Protic-PNC/" target="_blank" class="font-monserrat text-base sm:text-lg text-[#13111E80] hover:text-[#13111E] transition-colors">Github</a>
+          </div>
+          <div class="block sm:hidden w-full h-[1px] bg-[#13111E80]"></div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-c4 text-white h-14 flex justify-center items-center px-8">
+      <h3 class="text-center font-monserrat text-sm md:text-base">
+          Hak Cipta &copy; 2025. Protic. Semua hak dilindungi undang-undang.
+      </h3>
+    </footer>
+
+</body>
+</html>
